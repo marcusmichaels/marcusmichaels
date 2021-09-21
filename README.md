@@ -12,7 +12,7 @@ I'm also on (but rarely post on) [Twitter](https://twitter.com/marcusmichaels), 
 Funny you should ask! I built an automated tech/product/startup newsletter that collates links from my favourite sources and emails them to me three times a week. I call it [MarcusMail](https://bit.ly/marcus-mail), and you can sign up too if you'd like :)
 
 ### Working on any cool side-projects? 🚀
-Who isn't?! I've always got at least one thing on the go (when I have time to focus on it), but a couple that are live are [Dead Wallet](https://deadwallet.com) and [Plottd](https://plottd.com)
+Who isn't?! When I have time I like to work on [Browser Snippets](https://browsersnippets.com), but a couple of my other projects are [Dead Wallet](https://deadwallet.com) and [Plottd](https://plottd.com)
 
 <!--
 **marcusmichaels/marcusmichaels** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
