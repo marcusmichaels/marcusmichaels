@@ -1,7 +1,7 @@
 ### Hi there, I'm Marcus 👋
 
 ### Who dat? 🤔
-I'm a software engineer at a Design Systems startup called [zeroheight](https://zeroheight.com/), and founder of [Modest Industries](https://modestindustries.co). You can see more of my stuff on [marcusmichaels.com](https://marcusmichaels.com)
+I'm a software engineer with a background in design and advertising. Also founder of [Modest Industries](https://modestindustries.co). You can see more of my stuff on [marcusmichaels.com](https://marcusmichaels.com)
 
 ### Do u social? 👯
 Sure do! I take (lots of) photos of my desk and talk about projects and programming on Instagram: [@marcusmichaels](https://instagram.com/marcusmichaels)
