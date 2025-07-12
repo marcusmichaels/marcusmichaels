@@ -56,16 +56,6 @@ async function getRepoDetails(fullName) {
   };
 }
 
-function groupByOwner(repos) {
-  const grouped = {};
-  for (const repo of repos) {
-    const owner = repo.owner;
-    if (!grouped[owner]) grouped[owner] = [];
-    grouped[owner].push(repo);
-  }
-  return grouped;
-}
-
 function formatDate(isoString) {
   return new Date(isoString).toLocaleDateString("en-US", {
     year: "numeric",
@@ -95,19 +85,19 @@ function extractUserId(avatarUrl) {
 
 function generateMarkdownTable(repos) {
   let md = `## Open source contributions:\n\n`;
-  md += `| Logo | Repository | Stars | Language | License | Homepage | Last Contribution |\n`;
+  md += `| Logo | Repository | Stars | Language | License | Website | Last Contribution |\n`;
   md += `|------|------------|---------|-------------|-------------|-------------|----------------------|\n`;
 
   for (const repo of repos) {
     const logo = `![${repo.owner}](https://avatars.githubusercontent.com/u/${extractUserId(repo.avatar_url)}?s=60)`;
-    const link = `[**${repo.name}**](${repo.html_url})`;
+    const repoLink = `[${repo.name}](${repo.html_url})`;
+    const homepage = repo.homepage ? `[${new URL(repo.homepage).hostname}](${repo.homepage})` : "";
     const stars = repo.stars;
     const lang = repo.language;
     const license = repo.license;
-    const homepage = repo.homepage ? `[link](${repo.homepage})` : "";
     const last = repo.last_contribution ? formatDate(repo.last_contribution) : "";
 
-    md += `| ${logo} | ${link} | ${stars} | ${lang} | ${license} | ${homepage} | ${last} |\n`;
+    md += `| ${logo} | ${repoLink} | ${stars} | ${lang} | ${license} | ${homepage} | ${last} |\n`;
   }
 
   return md;
@@ -146,8 +136,7 @@ async function main() {
       }
     }
 
-    const grouped = groupByOwner(repos);
-    const markdown = generateMarkdownTable(grouped);
+    const markdown = generateMarkdownTable(repos);
     await updateReadme(markdown);
   } catch (err) {
     console.error("❌ Error:", err.message);
