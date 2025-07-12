@@ -50,7 +50,7 @@ async function getRepoDetails(fullName) {
     language: repo.language ?? "Unknown",
     stars: repo.stargazers_count,
     forks: repo.forks_count,
-    license: repo.license?.spdx_id ?? "Unknown",
+    license: repo.license?.spdx_id === "NOASSERTION" ? "Custom" : (repo.license?.spdx_id ?? "Unknown"),
     homepage: repo.homepage ?? "",
     avatar_url: repo.owner.avatar_url,
     owner: repo.owner.login,
