@@ -35,7 +35,7 @@ async function searchMergedPRs(username) {
     }
   }
 
-  return data.items.map(pr => [pr.pull_request.url, pr.closed_at]);
+  return data.items.map((pr) => [pr.pull_request.url, pr.closed_at]);
 }
 
 async function getRepoDetails(fullName) {
@@ -47,6 +47,9 @@ async function getRepoDetails(fullName) {
     description: repo.description ?? "",
     language: repo.language ?? "Unknown",
     stars: repo.stargazers_count,
+    forks: repo.forks_count,
+    license: repo.license?.spdx_id ?? "Unknown",
+    homepage: repo.homepage ?? "",
     avatar_url: repo.owner.avatar_url,
     owner: repo.owner.login,
     owner_type: repo.owner.type,
@@ -65,7 +68,9 @@ function groupByOwner(repos) {
 
 function formatDate(isoString) {
   return new Date(isoString).toLocaleDateString("en-US", {
-    year: "numeric", month: "short", day: "numeric",
+    year: "numeric",
+    month: "short",
+    day: "numeric",
   });
 }
 
@@ -74,18 +79,38 @@ async function updateReadme(markdown) {
   const readmePath = "README.md";
   const readme = await fs.readFile(readmePath, "utf-8");
 
-  const pattern = new RegExp(
-    `<!-- ${tag} START -->([\\s\\S]*?)<!-- ${tag} END -->`,
-    "m"
-  );
+  const pattern = new RegExp(`<!-- ${tag} START -->([\\s\\S]*?)<!-- ${tag} END -->`, "m");
 
   const replacement = `<!-- ${tag} START -->\n\n${markdown}\n<!-- ${tag} END -->`;
 
-  const updated = readme.match(pattern)
-    ? readme.replace(pattern, replacement)
-    : readme + `\n\n${replacement}`;
+  const updated = readme.match(pattern) ? readme.replace(pattern, replacement) : readme + `\n\n${replacement}`;
 
   await fs.writeFile(readmePath, updated, "utf-8");
+}
+
+function extractUserId(avatarUrl) {
+  const match = avatarUrl.match(/\/u\/(\d+)/);
+  return match ? match[1] : "0";
+}
+
+function generateMarkdownTable(repos) {
+  let md = `## Open source contributions:\n\n`;
+  md += `| Logo | Repository | Stars | Language | License | Homepage | Last Contribution |\n`;
+  md += `|------|------------|---------|-------------|-------------|-------------|----------------------|\n`;
+
+  for (const repo of repos) {
+    const logo = `![${repo.owner}](https://avatars.githubusercontent.com/u/${extractUserId(repo.avatar_url)}?s=60)`;
+    const link = `[**${repo.name}**](${repo.html_url})`;
+    const stars = repo.stars;
+    const lang = repo.language;
+    const license = repo.license;
+    const homepage = repo.homepage ? `[link](${repo.homepage})` : "";
+    const last = repo.last_contribution ? formatDate(repo.last_contribution) : "";
+
+    md += `| ${logo} | ${link} | ${stars} | ${lang} | ${license} | ${homepage} | ${last} |\n`;
+  }
+
+  return md;
 }
 
 async function main() {
@@ -120,10 +145,10 @@ async function main() {
         console.warn(`⚠️ Failed to fetch PR/repo details`);
       }
     }
+
     const grouped = groupByOwner(repos);
+    const markdown = generateMarkdownTable(grouped);
     await updateReadme(markdown);
-    await fs.writeFile("contributions.md", markdown, "utf-8");
-    console.log("✅ contributions.md generated.");
   } catch (err) {
     console.error("❌ Error:", err.message);
   }
