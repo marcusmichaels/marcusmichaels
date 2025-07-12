@@ -1,3 +1,5 @@
+const fs = await import("node:fs/promises");
+
 const USERNAME = "marcusmichaels";
 const GITHUB_TOKEN = ""; // only needed if I get rate limited
 
