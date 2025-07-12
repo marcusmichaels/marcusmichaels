@@ -69,7 +69,7 @@ function formatDate(isoString) {
   });
 }
 
-sync function updateReadme(markdown) {
+async function updateReadme(markdown) {
   const tag = "CONTRIBUTIONS";
   const readmePath = "README.md";
   const readme = await fs.readFile(readmePath, "utf-8");
