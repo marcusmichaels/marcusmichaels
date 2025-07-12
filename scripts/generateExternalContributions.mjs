@@ -6,6 +6,19 @@ const GITHUB_TOKEN = ""; // only needed if I get rate limited
 const MAX_REPOS = 50;
 const PER_PAGE = 100;
 
+function formatTimestamp(date = new Date()) {
+  return date.toLocaleString("en-GB", {
+    year: "numeric",
+    month: "short",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+    timeZone: "UTC",
+    timeZoneName: "short",
+  });
+}
+
 function authHeaders() {
   const headers = { "User-Agent": "external-merged-contributions" };
   if (GITHUB_TOKEN) headers.Authorization = `Bearer ${GITHUB_TOKEN}`;
@@ -86,7 +99,8 @@ function extractUserId(avatarUrl) {
 }
 
 function generateMarkdownTable(repos) {
-  let md = `## Open source contributions:\n\n`;
+  let md = `## Open source contributions: <sub><sup>Last generated: ${formatTimestamp()}</sup></sub>\n\n`;
+
   md += `| Logo | Repository | Stars | Language | License | Website | Last Contribution |\n`;
   md += `|------|------------|---------|-------------|-------------|-------------|----------------------|\n`;
 
@@ -117,7 +131,6 @@ async function main() {
 
       try {
         const prDetails = await fetchJson(prDetailsUrl);
-        const repoUrl = prDetails.base.repo.url;
         const fullName = prDetails.base.repo.full_name;
 
         if (seen.has(fullName)) continue;
