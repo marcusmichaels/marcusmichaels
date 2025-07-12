@@ -27,6 +27,6 @@ The CONTRIBUTIONS START / END section is a fun script that runs every day and ad
 | Logo | Repository | Stars | Language | License | Website | Last Contribution |
 |------|------------|---------|-------------|-------------|-------------|----------------------|
 | ![payloadcms](https://avatars.githubusercontent.com/u/62968818?s=60) | [payloadcms/payload](https://github.com/payloadcms/payload) | 36211 | TypeScript | MIT | [payloadcms.com](https://payloadcms.com) | Jun 22, 2025 |
-| ![neovim](https://avatars.githubusercontent.com/u/6471485?s=60) | [neovim/neovim](https://github.com/neovim/neovim) | 91042 | Vim Script | NOASSERTION | [neovim.io](https://neovim.io) | Feb 16, 2024 |
+| ![neovim](https://avatars.githubusercontent.com/u/6471485?s=60) | [neovim/neovim](https://github.com/neovim/neovim) | 91042 | Vim Script | Custom | [neovim.io](https://neovim.io) | Feb 16, 2024 |
 
 <!-- CONTRIBUTIONS END -->
