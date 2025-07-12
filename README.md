@@ -22,7 +22,7 @@ The CONTRIBUTIONS START / END section is a fun script that runs every day and ad
 
 <!-- CONTRIBUTIONS START -->
 
-## Open source contributions:
+## Open source contributions: <sub><sup>Last generated: 12 Jul 2025, 18:27 UTC</sup></sub>
 
 | Logo | Repository | Stars | Language | License | Website | Last Contribution |
 |------|------------|---------|-------------|-------------|-------------|----------------------|
