@@ -21,7 +21,7 @@ jobs:
           node-version: 22
 
       - name: Run script
-        run: node generateExternalContributions.mjs
+        run: node scripts/generateExternalContributions.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
