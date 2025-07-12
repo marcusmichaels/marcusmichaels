@@ -1,0 +1,38 @@
+name: Update External Contributions
+
+on:
+  schedule:
+    - cron: '0 8 * * *' # every day at 8am UTC
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name:Install dependencies
+        run: npm install
+
+      - name: Run script
+        run: node generateExternalContributions.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "🔄 Update external contributions" || echo "No changes to commit"
+          git push
+
