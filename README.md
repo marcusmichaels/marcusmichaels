@@ -22,11 +22,11 @@ The CONTRIBUTIONS START / END section is a fun script that runs every day and ad
 
 <!-- CONTRIBUTIONS START -->
 
-## Open source contributions: <sub><sup>Last generated: 04 Jan 2026, 08:07 UTC</sup></sub>
+## Open source contributions: <sub><sup>Last generated: 05 Jan 2026, 08:08 UTC</sup></sub>
 
 | Logo | Repository | Stars | Language | License | Website | Last Contribution |
 |------|------------|---------|-------------|-------------|-------------|----------------------|
-| ![payloadcms](https://avatars.githubusercontent.com/u/62968818?s=60) | [payloadcms/payload](https://github.com/payloadcms/payload) | 39660 | TypeScript | MIT | [payloadcms.com](https://payloadcms.com) | Aug 12, 2025 |
-| ![neovim](https://avatars.githubusercontent.com/u/6471485?s=60) | [neovim/neovim](https://github.com/neovim/neovim) | 95393 | Vim Script | Custom | [neovim.io](https://neovim.io) | Feb 16, 2024 |
+| ![payloadcms](https://avatars.githubusercontent.com/u/62968818?s=60) | [payloadcms/payload](https://github.com/payloadcms/payload) | 39686 | TypeScript | MIT | [payloadcms.com](https://payloadcms.com) | Aug 12, 2025 |
+| ![neovim](https://avatars.githubusercontent.com/u/6471485?s=60) | [neovim/neovim](https://github.com/neovim/neovim) | 95422 | Vim Script | Custom | [neovim.io](https://neovim.io) | Feb 16, 2024 |
 
 <!-- CONTRIBUTIONS END -->
