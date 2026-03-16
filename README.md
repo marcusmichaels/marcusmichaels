@@ -60,12 +60,12 @@ The CONTRIBUTIONS START / END section is a fun script that runs every day and ad
 
 <!-- CONTRIBUTIONS START -->
 
-## Open source contributions: <sub><sup>Last generated: 15 Mar 2026, 08:12 UTC</sup></sub>
+## Open source contributions: <sub><sup>Last generated: 16 Mar 2026, 08:26 UTC</sup></sub>
 
 | Logo | Repository | Stars | Language | License | Website | Last Contribution |
 |------|------------|---------|-------------|-------------|-------------|----------------------|
-| ![zellij-org](https://avatars.githubusercontent.com/u/73778475?s=60) | [zellij-org/zellij](https://github.com/zellij-org/zellij) | 29929 | Rust | MIT | [zellij.dev](https://zellij.dev) | Feb 18, 2026 |
-| ![payloadcms](https://avatars.githubusercontent.com/u/62968818?s=60) | [payloadcms/payload](https://github.com/payloadcms/payload) | 41197 | TypeScript | MIT | [payloadcms.com](https://payloadcms.com) | Aug 12, 2025 |
-| ![neovim](https://avatars.githubusercontent.com/u/6471485?s=60) | [neovim/neovim](https://github.com/neovim/neovim) | 97178 | Vim Script | Custom | [neovim.io](https://neovim.io) | Feb 16, 2024 |
+| ![zellij-org](https://avatars.githubusercontent.com/u/73778475?s=60) | [zellij-org/zellij](https://github.com/zellij-org/zellij) | 29987 | Rust | MIT | [zellij.dev](https://zellij.dev) | Feb 18, 2026 |
+| ![payloadcms](https://avatars.githubusercontent.com/u/62968818?s=60) | [payloadcms/payload](https://github.com/payloadcms/payload) | 41221 | TypeScript | MIT | [payloadcms.com](https://payloadcms.com) | Aug 12, 2025 |
+| ![neovim](https://avatars.githubusercontent.com/u/6471485?s=60) | [neovim/neovim](https://github.com/neovim/neovim) | 97240 | Vim Script | Custom | [neovim.io](https://neovim.io) | Feb 16, 2024 |
 
 <!-- CONTRIBUTIONS END -->
