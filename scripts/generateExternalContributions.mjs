@@ -265,20 +265,8 @@ async function main() {
       mergedMap.set(repo.name, repo);
     }
 
-    // 4. Build final list: new repos first (sorted by last contribution desc),
-    //    then existing repos in their original order (with refreshed data)
-    const finalRepos = [];
-
-    // Prepend newly discovered repos
-    const newRepos = newRepoNames
-      .map((name) => mergedMap.get(name))
-      .sort((a, b) => new Date(b.last_contribution) - new Date(a.last_contribution));
-    finalRepos.push(...newRepos);
-
-    // Then existing repos in their original order, with refreshed data
-    for (const existing of existingRepos) {
-      finalRepos.push(mergedMap.get(existing.name));
-    }
+    // 4. Build final list: all repos sorted by last contribution date (descending)
+    const finalRepos = [...mergedMap.values()].sort((a, b) => new Date(b.last_contribution) - new Date(a.last_contribution));
 
     console.log(`✅ Final list: ${finalRepos.length} repos (${newRepoNames.length} new)`);
 
