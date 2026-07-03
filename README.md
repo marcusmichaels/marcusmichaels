@@ -3,36 +3,48 @@
 │ $ whoami                                                      │
 │ marcus                                                        │
 │                                                               │
-│ $ whoami --verbose                                            │
-│ Software/product engineer with a background in design         │
-│ and advertising. Building websites, small tools,              │
-│ experiments, and occasional products.                         │
-│                                                               │
+│ $ whoami --verbose │
+│ Software/product engineer with a background in design │
+│ and advertising. Building websites, small tools, │
+│ experiments, and occasional products. │
+│ │
 │ $ work                                                        │
 │ web engineering lead    https://ffern.co                      │
 │ founder                 https://modestindustries.co           │
 │                                                               │
-│ $ personal                                                    │
-│ https://marcusmichaels.com                                    │
+│ $ personal │
+│ https://marcusmichaels.com │
 └───────────────────────────────────────────────────────────────┘
 ```
 
 ### Junk drawer
+
 Some small tools and experiments:
 
-| Project | Repo | Website | Description |
-|---------|------|---------|-------------|
-| modest-ui | [GitHub](https://github.com/thisismodest/modest-ui) | [Live](https://modest-ui.com) | Dependency-free CSS component library |
-| cave-cubers | [GitHub](https://github.com/marcusmichaels/cave-cubers) | [Live](https://marcusmichaels.com/cave-cubers) | Speedcube timer with leaderboard |
-| stay-safe | [GitHub](https://github.com/marcusmichaels/stay-safe) | [Live](https://marcusmichaels.com/stay-safe) | Remind colleagues to lock their laptops |
+| Project      | Repo                                                     | Website                                         | Description                               |
+| ------------ | -------------------------------------------------------- | ----------------------------------------------- | ----------------------------------------- |
+| modest-ui    | [GitHub](https://github.com/thisismodest/modest-ui)      | [Live](https://modest-ui.com)                   | Dependency-free CSS component library     |
+| cave-cubers  | [GitHub](https://github.com/marcusmichaels/cave-cubers)  | [Live](https://marcusmichaels.com/cave-cubers)  | Speedcube timer with leaderboard          |
+| stay-safe    | [GitHub](https://github.com/marcusmichaels/stay-safe)    | [Live](https://marcusmichaels.com/stay-safe)    | Remind colleagues to lock their laptops   |
 | fingerprintd | [GitHub](https://github.com/marcusmichaels/fingerprintd) | [Live](https://marcusmichaels.com/fingerprintd) | How websites identify you without cookies |
-| safe-file | [GitHub](https://github.com/marcusmichaels/safe-file) | [Live](https://marcusmichaels.com/safe-file) | Anonymous AES-256-GCM file encryption |
-| what-the-svh | [GitHub](https://github.com/marcusmichaels/what-the-svh) | [Live](https://marcusmichaels.com/what-the-svh) | Real-time viewport measurements |
+| safe-file    | [GitHub](https://github.com/marcusmichaels/safe-file)    | [Live](https://marcusmichaels.com/safe-file)    | Anonymous AES-256-GCM file encryption     |
+| what-the-svh | [GitHub](https://github.com/marcusmichaels/what-the-svh) | [Live](https://marcusmichaels.com/what-the-svh) | Real-time viewport measurements           |
+
+---
+
+### Vim Scoops
+
+[<img src="https://vimscoops.dev/icon-192.png" alt="Vim Scoops icon" width="60" />](https://vimscoops.dev)
+
+Learn vim motions without the pain. You're an ice-cream van (the cursor) zipping around a pixel town (the buffer), serving customers in as few keystrokes as you can. 45 levels, `hjkl` to macros.
+
+[Learn more →](https://vimscoops.dev)
 
 ---
 
 ### MarcusMail
-An automated newsletter I built that collects tech, product, and startup links and sends a digest a few times a week.  
+
+An automated newsletter I built that collects tech, product, and startup links and sends a digest a few times a week.
 
 [Join MarcusMail →](https://bit.ly/marcus-mail)
 
@@ -42,14 +54,15 @@ An automated newsletter I built that collects tech, product, and startup links a
 
 [<img src="https://questbar.app/images/app-icon.png" alt="QuestBar icon" width="60" />](https://questbar.app)
 
-A lightweight macOS menu bar app that keeps your active quest (or focus) always visible. Add quests with optional descriptions and manage them via RPG-style actions: Scribe, Begin, Vanquish, Resurrect.  
+A lightweight macOS menu bar app that keeps your active quest (or focus) always visible. Add quests with optional descriptions and manage them via RPG-style actions: Scribe, Begin, Vanquish, Resurrect.
 
 [Learn more →](https://questbar.app)
 
 ---
 
 ### Socials:
-- [Instagram](https://instagram.com/marcusmichaels)  
+
+- [Instagram](https://instagram.com/marcusmichaels)
 - [Threads](https://www.threads.com/@marcusmichaels)
 
 ---
@@ -62,11 +75,11 @@ The CONTRIBUTIONS START / END section is a fun script that runs every day and ad
 
 ## Open source contributions: <sub><sup>Last generated: 02 Jul 2026, 09:07 UTC</sup></sub>
 
-| Logo | Repository | Stars | Language | License | Website | Last Contribution |
-|------|------------|---------|-------------|-------------|-------------|----------------------|
-| ![vorpus](https://avatars.githubusercontent.com/u/1922888?s=60) | [vorpus/performativeUI](https://github.com/vorpus/performativeUI) | 788 | TypeScript | Unknown | [performative-ui.vercel.app](https://performative-ui.vercel.app) | Jun 8, 2026 |
-| ![zellij-org](https://avatars.githubusercontent.com/u/73778475?s=60) | [zellij-org/zellij](https://github.com/zellij-org/zellij) | 34021 | Rust | MIT | [zellij.dev](https://zellij.dev) | Feb 18, 2026 |
-| ![payloadcms](https://avatars.githubusercontent.com/u/62968818?s=60) | [payloadcms/payload](https://github.com/payloadcms/payload) | 43341 | TypeScript | MIT | [payloadcms.com](https://payloadcms.com) | Aug 12, 2025 |
-| ![neovim](https://avatars.githubusercontent.com/u/6471485?s=60) | [neovim/neovim](https://github.com/neovim/neovim) | 100847 | Vim Script | Custom | [neovim.io](https://neovim.io) | Feb 16, 2024 |
+| Logo                                                                 | Repository                                                        | Stars  | Language   | License | Website                                                          | Last Contribution |
+| -------------------------------------------------------------------- | ----------------------------------------------------------------- | ------ | ---------- | ------- | ---------------------------------------------------------------- | ----------------- |
+| ![vorpus](https://avatars.githubusercontent.com/u/1922888?s=60)      | [vorpus/performativeUI](https://github.com/vorpus/performativeUI) | 788    | TypeScript | Unknown | [performative-ui.vercel.app](https://performative-ui.vercel.app) | Jun 8, 2026       |
+| ![zellij-org](https://avatars.githubusercontent.com/u/73778475?s=60) | [zellij-org/zellij](https://github.com/zellij-org/zellij)         | 34021  | Rust       | MIT     | [zellij.dev](https://zellij.dev)                                 | Feb 18, 2026      |
+| ![payloadcms](https://avatars.githubusercontent.com/u/62968818?s=60) | [payloadcms/payload](https://github.com/payloadcms/payload)       | 43341  | TypeScript | MIT     | [payloadcms.com](https://payloadcms.com)                         | Aug 12, 2025      |
+| ![neovim](https://avatars.githubusercontent.com/u/6471485?s=60)      | [neovim/neovim](https://github.com/neovim/neovim)                 | 100847 | Vim Script | Custom  | [neovim.io](https://neovim.io)                                   | Feb 16, 2024      |
 
 <!-- CONTRIBUTIONS END -->
