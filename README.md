@@ -3,17 +3,17 @@
 │ $ whoami                                                      │
 │ marcus                                                        │
 │                                                               │
-│ $ whoami --verbose │
-│ Software/product engineer with a background in design │
-│ and advertising. Building websites, small tools, │
-│ experiments, and occasional products. │
-│ │
+│ $ whoami --verbose                                            │
+│ Software/product engineer with a background in design         │
+│ and advertising. Building websites, small tools,              │
+│ experiments, and occasional products.                         │
+│                                                               │
 │ $ work                                                        │
 │ web engineering lead    https://ffern.co                      │
 │ founder                 https://modestindustries.co           │
 │                                                               │
-│ $ personal │
-│ https://marcusmichaels.com │
+│ $ personal                                                    │
+│ https://marcusmichaels.com                                    │
 └───────────────────────────────────────────────────────────────┘
 ```
 
