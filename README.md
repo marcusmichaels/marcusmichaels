@@ -42,6 +42,14 @@ Learn vim motions without the pain. You're an ice-cream van (the cursor) zipping
 
 ---
 
+### LocalLuna
+
+Your local-first, personal AI assistant. It runs on your own hardware with its own memory. Connect it to your calendar, your email, your shell, your lights. No account, no subscription.
+
+[Learn more →](https://localluna.com)
+
+---
+
 ### MarcusMail
 
 An automated newsletter I built that collects tech, product, and startup links and sends a digest a few times a week.
