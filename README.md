@@ -44,17 +44,11 @@ Learn vim motions without the pain. You're an ice-cream van (the cursor) zipping
 
 ### LocalLuna
 
+[<img src="https://marcusmichaels.com/img/creations/local-luna.svg" alt="LocalLuna icon" width="60" />](https://localluna.com)
+
 Your local-first, personal AI assistant. It runs on your own hardware with its own memory. Connect it to your calendar, your email, your shell, your lights. No account, no subscription.
 
 [Learn more →](https://localluna.com)
-
----
-
-### MarcusMail
-
-An automated newsletter I built that collects tech, product, and startup links and sends a digest a few times a week.
-
-[Join MarcusMail →](https://bit.ly/marcus-mail)
 
 ---
 
@@ -65,6 +59,14 @@ An automated newsletter I built that collects tech, product, and startup links a
 A lightweight macOS menu bar app that keeps your active quest (or focus) always visible. Add quests with optional descriptions and manage them via RPG-style actions: Scribe, Begin, Vanquish, Resurrect.
 
 [Learn more →](https://questbar.app)
+
+---
+
+### MarcusMail
+
+An automated newsletter I built that collects tech, product, and startup links and sends a digest a few times a week.
+
+[Join MarcusMail →](https://bit.ly/marcus-mail)
 
 ---
 
