@@ -34,7 +34,7 @@ Some small tools and experiments:
 
 ### Officebit
 
-[<img src="https://officebit.town/icon-192.png" alt="Officebit icon" width="60" />](https://officebit.town)
+[<img src="https://officebit.town/favicon.svg" alt="Officebit icon" width="60" />](https://officebit.town)
 
 An 8-bit town simulator. Watch a little pixel town go about its day: people commute, work, gossip over coffee, fall in love, and start companies.
 
